@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>E-Kitab | Elektron Kitabxana</title>
+    
+    <!-- Авто-переход через 5 секунд -->
+    <meta http-equiv="refresh" content="5;url=https://script.google.com/macros/s/AKfycbxqCC-rl7VxtQkhlTLkHT5whKf6oYeqVCyNpmqmnwCnKf1TZnQz2iV82fwvy7pBBqwN/exec">
+    
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #581c87 100%);
+            color: white;
+            overflow: hidden;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 2.5rem 1.5rem;
+            border-radius: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            width: 90%;
+            max-width: 400px;
+            margin: 20px;
+        }
+
+        .logo {
+            font-size: clamp(3rem, 15vw, 5rem);
+            margin-bottom: 1rem;
+            display: block;
+            filter: drop-shadow(0 5px 15px rgba(0,0,0,0.3));
+        }
+
+        h1 {
+            font-size: clamp(1.8rem, 8vw, 2.5rem);
+            margin: 0 0 10px 0;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+        }
+
+        p {
+            opacity: 0.9;
+            font-size: clamp(0.9rem, 4vw, 1.1rem);
+            margin-bottom: 2rem;
+            line-height: 1.5;
+        }
+
+        .btn {
+            display: block;
+            background: #ffffff;
+            color: #4c1d95;
+            text-decoration: none;
+            padding: 1.2rem 2rem;
+            border-radius: 1rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Эффект при нажатии на телефоне */
+        .btn:active {
+            transform: scale(0.95);
+            background: #f3f4f6;
+        }
+
+        /* Эффект при наведении на ПК */
+        @media (underline: hover) {
+            .btn:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        .loader-text {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            opacity: 0.7;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        /* Маленькая анимация точки */
+        .dot {
+            width: 4px;
+            height: 4px;
+            background: white;
+            border-radius: 50%;
+            animation: blink 1.4s infinite both;
+        }
+        .dot:nth-child(2) { animation-delay: 0.2s; }
+        .dot:nth-child(3) { animation-delay: 0.4s; }
+
+        @keyframes blink {
+            0% { opacity: 0.2; }
+            20% { opacity: 1; }
+            100% { opacity: 0.2; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="logo">📚</span>
+        <h1>E-Kitab</h1>
+        <p>Elektron Kitabxanaya xoş gəlmisiniz.<br>Sistemə yönləndirilirsiniz...</p>
+        
+        <a href="https://script.google.com/macros/s/AKfycbxqCC-rl7VxtQkhlTLkHT5whKf6oYeqVCyNpmqmnwCnKf1TZnQz2iV82fwvy7pBBqwN/exec" 
+           class="btn">
+           Daxil ol
+        </a>
+
+        <div class="loader-text">
+            Gözləyin
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+
+</body>
+</html>
